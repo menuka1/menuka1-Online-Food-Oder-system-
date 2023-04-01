@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 125px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+ 
+section nav u1{
+    list-style: none;
+
+}
+
+section nav u1 li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav u1 li a {
+    text-decoration: none;
+    color: #000;
+    font-weight:bold;
+    font-size: 30px;
+    transition: 0.1s;
+}
+
+section nav u1 li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #1ddf7e;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav u1 li a:hover::after{
+    width: 100%;
+}
+
+section nav u1 li a:hover{
+    color: #1ddf7e;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+section nav .icon i:hover{
+    color: #1ddf7e;
+}
+
+section nav 
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 150px;
+}
+
+section .main .men-text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+section .main .men-text h1 span{
+    margin-left: 15px;
+    color: #1ddf7e;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 700px;
+    position: relative;
+    left: 70px;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 70px;
+    line-height: 22px;
+}
+
+section .main-btn{
+    background: #1ddf7e;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main-btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main-btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main-btn:hover i{
+    transform: translateX(7px);
+}

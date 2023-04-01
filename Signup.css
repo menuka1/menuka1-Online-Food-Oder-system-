@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+
+:root{
+
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color:#666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: 1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 16px;
+
+}
+
+html::-webkit-scrollbar-track{
+background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+
+.btn-submit, .btn-clear{
+    margin-top: 16px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--green);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-submit:hover, .btn-clear:hover{
+    background: var(--dark-color);
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.sign-up form{
+    background: #fff;
+    border: var(--border);
+    width: 350px;
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    margin: 25px;
+}
+
+.sign-up form h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+
+}
+
+.sign-up form span{
+    display: block;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.sign-up form .box{
+    width: 100%;
+    margin: 3px 0;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: var(--black);
+    text-transform: none;
+    border: 2px solid #cccccc;
+}
+
+.sign-up form .box:focus{
+    border: 2px solid #1ddf7e;
+}
+
+
+
+.sign-up form .checkbox{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sign-up form .checkbox label{
+    font-size: 14px;
+    color: var(--light-color);
+    cursor: pointer; 
+}
+
+p{
+    font-size: 13px;
+}
+
+a{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.btn-submit-clear{
+    display: flex;
+    float: left;
+}
+.sign-up form .btn-submit{
+    text-align: center;
+    width: 100%;
+    margin: 10px 20px 10px 30px;
+
+}
+.sign-up form .btn-clear{
+    text-align: center;
+    width: 100%;
+    margin: 10px 30px 10px 20px;
+
+}

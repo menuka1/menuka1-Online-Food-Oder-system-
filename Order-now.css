@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+nav .logo img{
+    width: 125px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+ 
+nav u1{
+    list-style: none;
+
+}
+
+nav u1 li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav u1 li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.1s;
+}
+
+nav u1 li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #1ddf7e;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav u1 li a:hover::after{
+    width: 100%;
+}
+
+nav u1 li a:hover{
+    color: #1ddf7e;
+}
+
+nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+nav .icon i:hover{
+    color: #1ddf7e;
+}
+
+.order{
+    width: 100%;
+    height: 100vh;
+    padding: 150px 0;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+
+.order h1 span{
+    color: #1ddf7e;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #1ddf7e;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order-main .order-image img{
+    width: 600px;
+    margin-top: 20px;
+}
+
+.order .order-main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order-main form .input p{
+    line-height: 25px;
+}
+
+.order .order-main form .input{
+    margin: 5px;
+}
+
+.order .order-main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #cccccc;
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order-main form .input input:focus{
+    border: 2px solid #1ddf7e;
+}
+
+.order .order-main form .order-btn{
+    padding: 10px 0;
+    background: #1ddf7e;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}

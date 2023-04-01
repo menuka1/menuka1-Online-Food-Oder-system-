@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+nav .logo img{
+    width: 125px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+ 
+nav u1{
+    list-style: none;
+
+}
+
+nav u1 li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav u1 li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.1s;
+}
+
+nav u1 li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #1ddf7e;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav u1 li a:hover::after{
+    width: 100%;
+}
+
+nav u1 li a:hover{
+    color: #1ddf7e;
+}
+
+nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+nav .icon i:hover{
+    color: #1ddf7e;
+}
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 0 0;
+    margin-top: 20px;
+
+}
+
+.menu h1 span{
+    color: #1ddf7e;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #1ddf7e;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .main-box{
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px;
+}
+
+.menu .main-box h2{
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.menu .main-box .menu-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .main-box .menu-box .menu-card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu .main-box .menu-box .menu-card .menu-image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .main-box .menu-box .menu-card .menu-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .main-box .menu-box .menu-card .menu-image:hover img{
+   transform: scale(1.1);
+}
+
+.menu .main-box .menu-box .menu-card .small-card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .main-box .menu-box .menu-card:hover .small-card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+
+.menu .main-box .menu-box .menu-card .small-card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.menu .main-box .menu-box .menu-card .small-card i:hover{
+    color: #1ddf7e;
+}
+
+.menu .main-box .menu-box .menu-card .menu-info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #1ddf7e;
+}
+
+.menu .main-box .menu-box .menu-card .menu-info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.menu .main-box .menu-box .menu-card .menu-info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.menu .main-box .menu-box .menu-card .menu-info .menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+    margin-top: 15px;
+}

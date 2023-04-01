@@ -56,7 +56,7 @@ body {
 	left: 0;
 	width: 280px;
 	height: 100%;
-	background: var(--light);
+	background:var(--light);
 	z-index: 2000;
 	font-family: var(--lato);
 	transition: .3s ease;
@@ -180,7 +180,7 @@ body {
 /* NAVBAR */
 #content nav {
 	height: 56px;
-	background: var(--light);
+	background:var(--light);
 	padding: 0 24px;
 	display: flex;
 	align-items: center;

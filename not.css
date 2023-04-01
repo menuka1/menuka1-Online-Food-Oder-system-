@@ -117,9 +117,39 @@ strong:hover{
 .chess_img{
 margin-left: auto;
 }
+.homebutton {
+  left: 0px;
+  width: 125px;
+  padding-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+  z-index: 2;}
+
+.homebutton a {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.3em 1.25em;
+  border: 1px solid #c2c7cc;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.667em;
+  text-decoration: none;
+  color: #8a9199;
+  cursor: pointer;
+  background: #fff;
+  transition: color,border-color ease 0.3s;
+  border-radius: 2em;
+  text-align: center;
+}
+.homebutton a:hover {
+  border-color: #42B6F3;
+  color: #42B6F3;
+  text-decoration: none;
+}
 
 @media screen and (max-width:550px) {
   .container{
     margin: 0;
   }
 }
+

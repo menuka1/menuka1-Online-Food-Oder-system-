@@ -344,6 +344,8 @@ body {
 #content nav .notification {
 	font-size: 20px;
 	position: relative;
+	align-items: right ;
+	
 }
 #content nav .notification .num {
 	position: absolute;

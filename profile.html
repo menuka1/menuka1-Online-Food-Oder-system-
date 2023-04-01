@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="pro.css">
+	<link rel="stylesheet" href="style.css">
+
+	<title>NFOOD</title>
+</head>
+<body>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-food'></i>
+			<span class="text">NFOOD</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="admin.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="mystore.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">My Store</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-receipt'></i>
+					<span class="text">Bill</span>
+				</a>
+			</li>
+			<li>
+				<a href="mas.html">
+					<i class='bx bxs-cart'></i>
+					<span class="text">Orders</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html">
+					<i class='bx bxs-user'></i>
+					<span class="text">Profile</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<!--<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>-->
+			<li>
+				<a href="sign.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+		</nav>
+		<!-- NAVBAR -->
+	<div class="update-profile">
+	 
+		<form action="" method="post" enctype="multipart/form-data">
+		   <div class="flex">
+			  <div class="inputBox">
+				 <span>username :</span>
+				 <input type="text" name="update_name" value="#" class="box">
+				 <span>your email :</span>
+				 <input type="email" name="update_email" value="#" class="box">
+				 <span>update your pic :</span>
+				 <input type="file" name="update_image" accept="#" class="box">
+			  </div>
+			  <div class="inputBox">
+				 <input type="hidden" name="old_pass" value="#">
+				 <span>old password :</span>
+				 <input type="password" name="update_pass" placeholder="enter previous password" class="box">
+				 <span>new password :</span>
+				 <input type="password" name="new_pass" placeholder="enter new password" class="box">
+				 <span>confirm password :</span>
+				 <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
+			  </div>
+		   </div>
+		   <input type="submit" value="update profile" name="update_profile" class="btn">
+		   <a href="#" class="delete-btn">Delete profile</a>
+		     
+		
+		</form>
+	 
+	</div>
+	
+    <script src="script.js"></script>
+	
+</body>
+</html>

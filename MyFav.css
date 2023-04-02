@@ -179,30 +179,28 @@ nav .profile-dropdown-list-item a i{
     border-radius: 50%;
 }
 
-.order{
+.menu{
     width: 100%;
-    height: 100vh;
-    padding: 150px 0;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
+    padding: 70px 0;
 }
 
-.order h1{
+.menu h1{
+    font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000;
-    font-size: 55px;
+    padding: 70px 0 0 0;
+    margin-top: 20px;
+
 }
 
-.order h1 span{
+.menu h1 span{
     color: #1ddf7e;
-    margin-right: 15px;
+    margin-left: 15px;
     font-family: mv boli;
 }
 
-.order h1 span::after{
+.menu h1 span::after{
     content: '';
     width: 100%;
     height: 2px;
@@ -212,51 +210,173 @@ nav .profile-dropdown-list-item a i{
     bottom: 15px;
 }
 
-.order .order-main{
+.menu .main-box{
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px;
+}
+
+
+.menu .main-box .menu-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .main-box .menu-box .menu-card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu .main-box .menu-box .menu-card .menu-image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .main-box .menu-box .menu-card .menu-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .main-box .menu-box .menu-card .menu-image:hover img{
+   transform: scale(1.1);
+}
+
+.menu .main-box .menu-box .menu-card .small-card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .main-box .menu-box .menu-card:hover .small-card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+
+.menu .main-box .menu-box .menu-card .small-card i{
+    font-size: 25px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
 }
 
-.order .order-main .order-image img{
-    width: 600px;
-    margin-top: 20px;
+.menu .main-box .menu-box .menu-card .small-card i:hover{
+    color: #1ddf7e;
 }
 
-.order .order-main form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 10px;
-}
-
-.order .order-main form .input p{
-    line-height: 25px;
-}
-
-.order .order-main form .input{
-    margin: 5px;
-}
-
-.order .order-main form .input input{
-    width: 300px;
-    height: 35px;
-    padding: 0 10px;
-    border: 2px solid #cccccc;
-    background: #cccccc;
-    outline: none;
-    border-radius: 3px;
-}
-
-.order .order-main form .input input:focus{
-    border: 2px solid #1ddf7e;
-}
-
-.order .order-main form .order-btn{
-    padding: 10px 0;
-    background: #1ddf7e;
-    color: white;
-    width: 40%;
+.menu .main-box .menu-box .menu-card .menu-info h2{
+    width: 60%;
     text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #1ddf7e;
 }
+
+.menu .main-box .menu-box .menu-card .menu-info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.menu .main-box .menu-box .menu-card .menu-info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.menu .main-box .menu-box .menu-card .menu-info .menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer-main .footer-tag p{
+    margin: 10px 0;
+    font-weight: bold;
+    
+}
+
+footer .footer-main .footer-tag p:hover{
+    color: #1ddf7e;
+}
+
+footer .footer-main .footer-tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer-main .footer-tag i:hover{
+    color: #1ddf7e;
+}
+
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1ddf7e;
+    border-radius: 15px;
+}
+   

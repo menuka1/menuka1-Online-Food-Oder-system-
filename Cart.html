@@ -26,10 +26,47 @@
         </u1>
 
         <div class="icon"> 
-            <a class="active" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a class="active" href="#"></a>
+            <a href="MyFav.html"><i class="fa-solid fa-heart"></i></a>
             <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+
+        <div class="profile-dropdown">
+            <div class="profile-dropdown-btn" onclick="toggle()">
+                <div class="profile-img">
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <span>Kaushi
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+            </div>
+
+            <ul class="profile-dropdown-list">
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Edit Profile
+                    </a>
+                </li>
+
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-sliders"></i>
+                        Settings & Privacy
+                    </a>
+                </li>
+
+                <hr/>
+ 
+                <li class="profile-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
         
     </nav>
@@ -93,6 +130,12 @@
         <div class="total-price">
 
             <table>
+
+                <tr>
+                    <td>No.of Orders</td>
+                    <td><input type="number" value=""></td>
+                </tr>
+
                 <tr>
                     <td>Subtotal</td>
                     <td>Rs.0.00</td>
@@ -107,9 +150,16 @@
 
         </div>
 
+
+
     </div>
 
-     
+        <div class="buy-now-btn">
+        <a href="#">Order Now</a>
+        <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+     <script src="Cart.js"></script>
     
 </body>
 </html>

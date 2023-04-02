@@ -47,9 +47,11 @@ background:transparent;
 html::-webkit-scrollbar-thumb{
     background:var(--black);
 }
- 
+
+
+
 .btn{
-    margin-top: 1rem;
+    margin-top: 16px;
     display: inline-block;
     padding: .9rem 3rem;
     border-radius: .5rem;
@@ -132,6 +134,7 @@ html::-webkit-scrollbar-thumb{
     padding-top: .8rem;
     color: var(--light-color);
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .login-form-container form p a{

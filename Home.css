@@ -70,7 +70,7 @@ section nav u1 li a:hover{
 }
 
 section nav .icon i{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     margin: 0 5px;
     cursor: pointer;
@@ -82,7 +82,109 @@ section nav .icon i:hover{
     color: #1ddf7e;
 }
 
-section nav 
+section nav .profile-dropdown{
+    position: relative;
+    width: fit-content;
+}
+
+section nav .profile-dropdown-btn{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    padding-right: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgb(175, 172, 172);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+section nav .profile-dropdown-btn span{
+    margin: 0 8px;
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+section nav .profile-dropdown-btn span i{
+    display: none;
+}
+
+section nav .profile-dropdown-btn:hover{
+    background-color: rgb(29,223,126);
+    box-shadow: var(--shadow);
+}
+
+section nav .profile-img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background: url(download\ \(2\).jpg);
+}
+
+section nav .profile-img i{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    font-size: 8px;
+    color: rgb(15, 170, 15);
+}
+
+section nav .profile-dropdown-list{
+    position: absolute;
+    top: 68px;
+    width: 220px;
+    right: 0;
+    background-color: rgb(248, 242, 242);
+    border-radius: 10px;
+    box-shadow: darkgrey;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+section nav .profile-dropdown-list.active{
+    max-height: 500px;
+}
+
+section nav .profile-dropdown-list hr{
+    border: 0.5px solid green;
+}
+
+section nav .profile-dropdown-list-item{
+    padding: 8px 0px 8px 16px;
+    transition: background-color 0.2s, padding-left 0.2s;
+}
+
+section nav .profile-dropdown-list-item:hover{
+    padding-left: 25px;
+    background-color: #1ddf7e;
+}
+
+section nav .profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+section nav .profile-dropdown-list-item a i{
+    margin-right: 12px;
+    font-size: 17px;
+    width: 36px;
+    height: 36px;
+    background-color: var(--secondary);
+    color: var(--white);
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+}
 
 section .main{
     display: flex;
@@ -146,3 +248,62 @@ section .main-btn i{
 section .main-btn:hover i{
     transform: translateX(7px);
 }
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer-main .footer-tag p{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+footer .footer-main .footer-tag p:hover{
+    color: #1ddf7e;
+}
+
+footer .footer-main .footer-tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer-main .footer-tag i:hover{
+    color: #1ddf7e;
+}
+
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1ddf7e;
+    border-radius: 15px;
+}
+   

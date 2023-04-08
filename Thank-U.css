@@ -41,11 +41,10 @@
     transition: transform 0.4s, top 0.4s;
 }
 
-open-popup{
+.open-popup{
     visibility: visible;
     top: 50%;
-    transform: translate(-50% , -50%) scale(0.1);
-
+    transform: translate(-50% , -50%) scale(1);
 }
 
 .popup img{
@@ -64,8 +63,6 @@ open-popup{
 .popup p{
     font-size: 18px;
     font-weight: bold;
-    
-    
 }
 
 .popup button{

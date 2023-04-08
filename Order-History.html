@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a5d74a9015.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="Order-History.css">
+   
     <title>Document</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
             <li><a href="Menu.html">Menu</a></li>
             <li><a href="Team.html">Contact Us</a></li>
             <li><a href="Order-History.html">History</a></li>
-            
+       
         </u1>
 
         <div class="icon"> 
@@ -71,136 +72,134 @@
         
     </nav>
 
-    <div class="small-container-Cart-page">
+    
+
+    <div class="small-container-history-page">
+        <div class="order" id="order">
+            <h1><span>Order</span>History</h1>
+        </div>
 
         <table>
             <tr>
                 <th>Food Item</th>
                 <th>Quantity</th>
-                <th>Subtotal</th>
+                <th>Amount</th>
+                <th>Purchased Date & Time</th>
+                <th></th>
+                
             </tr>
 
             <tr> 
                 <td>
-                    <div class="cart-info">
+                    <div class="history-info">
                         <img src="download (2).jpg" alt="">
                         <div>
-                            <p>Rice and Curry</p>
+                            <h3>Rice and Curry</h3>
                             <small>Price:Rs.0.00</small>
-                            <a href="#">Remove</a>
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value=""></td>
+                <td><input type="text" value="1"></td>
                 <td>Rs.0.00</td>
+                <td>10-04-2023  00.00.00</td>
+                <td>
+                    <div class="btn-dlt">
+                        <i class="fa-solid fa-trash"> <a>Delete</a></i>
+                    </div<>
+                </td>
             </tr>
 
             <tr> 
                 <td>
-                    <div class="cart-info">
+                    <div class="history-info">
                         <img src="download (2).jpg" alt="">
                         <div>
-                            <p>Rice and Curry</p>
+                            <h3>Rice and Curry</h3>
                             <small>Price:Rs.0.00</small>
-                            <a href="#">Remove</a>
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value=""></td>
+                <td><input type="text" value="1"></td>
                 <td>Rs.0.00</td>
+                <td>10-04-2023  00.00.00</td>
+                <td>
+                    <div class="btn-dlt">
+                        <i class="fa-solid fa-trash"> <a>Delete</a></i>
+                    </div<>
+                </td>
             </tr>
 
             <tr> 
                 <td>
-                    <div class="cart-info">
+                    <div class="history-info">
                         <img src="download (2).jpg" alt="">
                         <div>
-                            <p>Rice and Curry</p>
+                            <h3>Rice and Curry</h3>
                             <small>Price:Rs.0.00</small>
-                            <a href="#">Remove</a>
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value=""></td>
+                <td><input type="text" value="2"></td>
                 <td>Rs.0.00</td>
+                <td>10-04-2023  00.00.00</td>
+                <td>
+                    <div class="btn-dlt">
+                        <i class="fa-solid fa-trash"> <a>Delete</a></i>
+                    </div<>
+                </td>
             </tr>
 
         </table>
 
-        <div class="total-price">
-
-            <table>
-
-                <tr>
-                    <td>No.of Orders</td>
-                    <td><input type="number" value=""></td>
-                </tr>
-
-                <tr>
-                    <td>Subtotal</td>
-                    <td>Rs.0.00</td>
-                </tr>
-
-                <tr>
-                    <td>Total</td>
-                    <td>Rs.0.00</td>
-                </tr>
-
-            </table>
-
-        </div>
-
-
-
     </div>
 
-        <div class="buy-now-btn">
-        <a href="Payment.html">Order Now</a>
-        <i class="fa-solid fa-angle-right"></i>
+    <div class="btn">
+        <i class="fa-solid fa-trash"> <a>Delete All Records</a></i>
         </div>
 
-        <footer>
-            <div class="footer-main">
-    
-                <div class="footer-tag">
-                    <h2>Location</h2>
-                    <p>NSBM Green University,
-                     Mahenwaththa,
-                    Pitipana</p>
-                </div>
-    
-                <div class="footer-tag">
-                    <h2>Quick Link</h2>
-                    <a href="Home.html"><p>Home</p></a>
-                    <a href="About.html"><p>About</p></a>
-                    <a href="Menu.html"><p>Menu</p></a>
-                    
-                </div>
-    
-                <div class="footer-tag">
-                    <h2>Contact</h2>
-                    <p>+940113473829</p>
-                    <p>0115445000</p>
-                    <p>NSBM@nlearn.ac.lk</p>
-                </div>
-    
-                <div class="footer-tag">
-                    <h2>Our Payment</h2>
-                    <p>Easy Payment</p>
-                </div>
-    
-                <div class="footer-tag">
-                    <h2>Follow</h2>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-    
-            </div>
-        </footer>
 
-     <script src="Cart.js"></script>
+    <footer>
+        <div class="footer-main">
+
+            <div class="footer-tag">
+                <h2>Location</h2>
+                <p>NSBM Green University,
+                 Mahenwaththa,
+                Pitipana</p>
+            </div>
+
+            <div class="footer-tag">
+                <h2>Quick Link</h2>
+                <a href="Home.html"><p>Home</p></a>
+                <a href="About.html"><p>About</p></a>
+                <a href="Menu.html"><p>Menu</p></a>
+                
+            </div>
+
+            <div class="footer-tag">
+                <h2>Contact</h2>
+                <p>+940113473829</p>
+                <p>0115445000</p>
+                <p>NSBM@nlearn.ac.lk</p>
+            </div>
+
+            <div class="footer-tag">
+                <h2>Our Payment</h2>
+                <p>Easy Payment</p>
+            </div>
+
+            <div class="footer-tag">
+                <h2>Follow</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="Order-History.js"></script>
     
 </body>
 </html>

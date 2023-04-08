@@ -274,3 +274,74 @@ th:last-child{
 .buy-now-btn:hover i{
     transform: translateX(7px);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer-main .footer-tag p{
+    margin: 10px 0;
+    font-weight: bold;
+    
+}
+
+footer .footer-main .footer-tag p:hover{
+    color: #1ddf7e;
+}
+
+footer .footer-main .footer-tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer-main .footer-tag i:hover{
+    color: #1ddf7e;
+}
+
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1ddf7e;
+    border-radius: 15px;
+}
+   

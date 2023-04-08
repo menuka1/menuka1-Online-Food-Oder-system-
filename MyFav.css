@@ -271,7 +271,7 @@ nav .profile-dropdown-list-item a i{
     opacity: 1;
 }
 
-.menu .main-box .menu-box .menu-card .small-card i{
+*.menu .main-box .menu-box .menu-card .small-card i{
     font-size: 25px;
     display: flex;
     align-items: center;

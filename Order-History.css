@@ -179,16 +179,7 @@ nav .profile-dropdown-list-item a i{
     border-radius: 50%;
 }
 
-.order{
-    width: 100%;
-    height: 100vh;
-    padding: 150px 0;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-}
-
-.order h1{
+.small-container-history-page h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,13 +187,13 @@ nav .profile-dropdown-list-item a i{
     font-size: 55px;
 }
 
-.order h1 span{
+.small-container-history-page h1 span{
     color: #1ddf7e;
     margin-right: 15px;
     font-family: mv boli;
 }
 
-.order h1 span::after{
+.small-container-history-page h1 span::after{
     content: '';
     width: 100%;
     height: 2px;
@@ -212,51 +203,167 @@ nav .profile-dropdown-list-item a i{
     bottom: 15px;
 }
 
-.order .order-main{
+.small-container-history-page{
+    padding: 175px 0;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.history-info{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.order .order-main .order-image img{
-    width: 600px;
-    margin-top: 20px;
-}
-
-.order .order-main form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 10px;
-}
-
-.order .order-main form .input p{
-    line-height: 25px;
-}
-
-.order .order-main form .input{
-    margin: 5px;
-}
-
-.order .order-main form .input input{
-    width: 300px;
-    height: 35px;
-    padding: 0 10px;
-    border: 2px solid #cccccc;
-    background: #cccccc;
-    outline: none;
-    border-radius: 3px;
-}
-
-.order .order-main form .input input:focus{
-    border: 2px solid #1ddf7e;
-}
-
-.order .order-main form .order-btn{
-    padding: 10px 0;
+th{
+    text-align: left;
+    padding: 10px;
+    color: #fff;
     background: #1ddf7e;
-    color: white;
-    width: 40%;
-    text-align: center;
-    margin-top: 20px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #1ddf7e;
+    font-size: 12px;
+}
+
+td img{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+td .btn-dlt{
+    background: #1ddf7e;
+    position: relative;
+    left: 15px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+td .btn-dlt a{
+    color: rgb(51, 49, 49);
+    margin-right: 5px;
     text-decoration: none;
 }
+
+td .btn-dlt i{
+    color: rgb(51, 49, 49);
+    transition: 0.3s;
+}
+
+
+
+.btn{
+    background: #1ddf7e;
+    position: relative;
+    left: 1500px;
+    bottom: 30px;
+    width: 250px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+.btn a{
+    color: rgb(51, 49, 49);
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.btn i{
+    color: rgb(51, 49, 49);
+    transition: 0.3s;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag{
+    text-align: center;
+}
+
+footer .footer-main .footer-tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer-main .footer-tag p{
+    margin: 10px 0;
+    font-weight: bold;
+    
+}
+
+footer .footer-main .footer-tag p:hover{
+    color: #1ddf7e;
+}
+
+footer .footer-main .footer-tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer-main .footer-tag i:hover{
+    color: #1ddf7e;
+}
+
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1ddf7e;
+    border-radius: 15px;
+}
+   

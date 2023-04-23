@@ -7,5 +7,6 @@ const sr = ScrollReveal (
     }
  );
  
- sr.reveal('.wrapper', {delay:100, origin:'top'});
+ sr.reveal('form', {delay:100, origin:'top'});
+ 
  

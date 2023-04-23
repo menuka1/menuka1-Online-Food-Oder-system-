@@ -13,6 +13,7 @@ html{
 section{
     width: 100%;
     height: 100vh;
+    
 
 }
 
@@ -28,15 +29,26 @@ section nav{
     z-index: 1000;
 }
 
+section nav .logo {
+    display: flex;
+}
+
 section nav .logo img{
     width: 125px;
     cursor: pointer;
     margin: 30px 0;
 }
+
+section nav .logo span{
+    font-family: mv boli;
+    color: #1ddf7e;
+    font-size: 20;
+    font-weight: bold;
+    
+}
  
 section nav u1{
     list-style: none;
-
 }
 
 section nav u1 li{
@@ -123,7 +135,7 @@ section nav .profile-img{
     height: 50px;
     border-radius: 50%;
     background-size: cover;
-    background: url(download\ \(2\).jpg);
+    background: url(pfofile.jpeg);
 }
 
 section nav .profile-img i{
@@ -198,7 +210,8 @@ section .main .men-text h1{
     font-size: 60px;
     position: relative;
     top: -90px;
-    left: 20px;
+    left: 30px;
+    
 }
 
 section .main .men-text h1 span{
@@ -210,26 +223,29 @@ section .main .men-text h1 span{
 }
 
 section .main .main_image img{
-    width: 700px;
+    width: 600px;
     position: relative;
-    left: 70px;
+    left: 60px;
 }
 
 section p{
     width: 650px;
-    text-align: justify;
+    text-align: center;
     position: relative;
-    left: 123px;
+    left: 140px;
     bottom: 70px;
     line-height: 22px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 section .main-btn{
     background: #1ddf7e;
     position: relative;
-    left: 123px;
-    bottom: 30px;
-    width: 150px;
+    left: 480px;
+    bottom: -10px;
+    width: 140px;
     cursor: pointer;
     padding: 12px 25px;
 }
@@ -268,6 +284,11 @@ footer .footer-main .footer-tag{
     text-align: center;
 }
 
+footer .footer-main .footer-tag a{
+    text-decoration: none;
+    color: #000;
+}
+
 footer .footer-main .footer-tag h2{
     color: #000;
     margin-bottom: 25px;
@@ -292,7 +313,6 @@ footer .footer-main .footer-tag i:hover{
     color: #1ddf7e;
 }
 
-
 ::-webkit-scrollbar{
     width: 13px;
 }
@@ -306,4 +326,3 @@ footer .footer-main .footer-tag i:hover{
     background: #1ddf7e;
     border-radius: 15px;
 }
-   

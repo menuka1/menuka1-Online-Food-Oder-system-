@@ -21,6 +21,17 @@ nav{
     z-index: 1000;
 }
 
+nav .logo{
+    display: flex;
+}
+
+nav .logo span{
+    font-family: mv boli;
+    color: #1ddf7e;
+    font-size: 18;
+    font-weight: bold;
+}
+
 nav .logo img{
     width: 125px;
     cursor: pointer;
@@ -116,7 +127,7 @@ nav .profile-img{
     height: 50px;
     border-radius: 50%;
     background-size: cover;
-    background: url(download\ \(2\).jpg);
+    background: url(pfofile.jpeg);
 }
 
 nav .profile-img i{
@@ -325,6 +336,11 @@ footer .footer-main .footer-tag{
 
 footer .footer-main .footer-tag{
     text-align: center;
+}
+
+footer .footer-main .footer-tag a{
+    text-decoration: none;
+    color: #000;
 }
 
 footer .footer-main .footer-tag h2{
